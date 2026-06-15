@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>The small web</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #44a865;
+        }
+        #myImage {
+            display: none;
+            max-width: 90%;
+            height: auto;
+            margin-top: 15px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #d8d8d8;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #d8d8d8;
+        }
+    </style>
+<body>
+    <body>Feel free to explore this website!</body>
+    <h1>The small web</h1>
+    <button id="showBtn">May or may not contain a spider</button>
+
+    <img id="myImage" src="https://cdn.mos.cms.futurecdn.net/JRJQP5fZSHS7gxRu6gfivj.jpg" alt="Example Image">
+
+    <script>
+        const button = document.getElementById('showBtn');
+        const image = document.getElementById('myImage');
+
+        button.addEventListener('click', function () {
+            if (image.style.display === 'none') {
+                image.style.display = 'block';
+                button.textContent = 'May or may not contain a spider';
+            } else {
+                image.style.display = 'none';
+                button.textContent = 'May or may not contain a spider';
+            }
+        });
+    </script>
+
+</body>
+</head>
+<body>
+    
+    <p>the best coders in the world</p>
+
+    <button onclick="displayText()">Dad Jokes</button>
+    <div id="dad_jokes">how much space do fungi need to grow,as mushroom as posible. how do you organize a space party, you planet. I put my phone on airplain mode but it still wont fly. <br>why did the computer go to the docter, because it had a virus. Why do seagulls fly over the ocean, because if they flew over the bay theyd be called bagels!.<br> What do you call fake spagetti, an impasta. What do you call a snowman with a six-pack?
+An abdominal snowman!  </div>
+
+</body>
+
+<script>
+    function displayText() {
+        var x = document.getElementById("dad_jokes");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+
+</script>
+</html> 
